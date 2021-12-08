@@ -5,8 +5,8 @@
   "repository": "git@github.com:ISMAILBOUADDI/toDo_project.git",
   "author": "ismailbouaddi <ismailbouaddi55@gmail.com>",
   "license": "MIT",
-  "scripts":{
-    "dev":"webpack"
+  "scripts": {
+    "dev": "webpack"
   },
   "devDependencies": {
     "webpack": "^5.65.0",
