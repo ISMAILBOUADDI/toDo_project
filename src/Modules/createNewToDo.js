@@ -1,5 +1,4 @@
 "use strict";
-
 class Todo {
   constructor(title,description,dueDate,priority){
     this.title = title;
@@ -40,3 +39,4 @@ class Todo {
     return myPriority;
   }
 }
+
