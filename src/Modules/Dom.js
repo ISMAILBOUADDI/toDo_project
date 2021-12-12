@@ -28,3 +28,9 @@ const btnCancelEdit = document.querySelector('.cancel-edit-todo');
 // placeholder for current active/selected project or todos
 let activeProject = '';
 let activeTodos = '';
+// element utilities
+const clearInputs = () => {
+ formInputs.forEach((form) => {
+   form.reset();
+ });
+};
