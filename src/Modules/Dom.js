@@ -24,3 +24,7 @@ const priority = document.querySelector('#priority');
 const description = document.querySelector('#description');
 const modalDiv = document.querySelector('.modal-edit-todo');
 const btnCancelEdit = document.querySelector('.cancel-edit-todo');
+
+// placeholder for current active/selected project or todos
+let activeProject = '';
+let activeTodos = '';
