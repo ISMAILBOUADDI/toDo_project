@@ -1,4 +1,4 @@
-import { projectsArray } from './storager';
+import { projectsArray } from './storage';
 import { projectInputField } from './Dom';
 
  class Project{
@@ -21,8 +21,8 @@ import { projectInputField } from './Dom';
     }
 }
 const addNewProject = () => {
-    const newProject = new Project(projectInputField.value);
-        projectArray.push(newProject);
+ const newProject = new Project(projectInputField.value);
+ projectsArray.push(newProject);
 };
   
 export { Project, addNewProject };
