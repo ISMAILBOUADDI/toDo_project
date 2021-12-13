@@ -3,6 +3,7 @@ import { projectsArray } from './storage';
 
 //, dueDate, priority
 
+
 class Todo {
   constructor(title,description,dueDate,priority){
     this.title = title;

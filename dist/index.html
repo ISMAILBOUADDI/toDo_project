@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -127,3 +128,100 @@
     </div>
   </body>
 </html>
+=======
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>ToDoList</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="content-container">
+  <!-- header section -->
+  <header>
+    <!-- <div class="toggle-menu-btn">
+      <span class="fas fa-bars"></span>
+    </div> -->
+    <div class="logo">
+      <h1>Todo List App</h1>
+    </div>
+  </header>
+  <!-- end of header -->
+   <!-- menu section -->
+   <section>
+    <div class="close-menu-btn">
+      <span class="fas fa-times"></span>
+    </div>
+    <div class="control-menu">
+      <h2 class="is-today">
+        <i class="fas fa-calendar-day today"></i> Today
+      </h2>
+      <h2 class="is-this-week">
+        <i class="fas fa-calendar-week week"></i> This Week
+      </h2>
+      <h2 class="project-header">Projects:</h2>
+      <div class="projects-div"></div>
+      <div class="btn-new-project">
+        <p><i class="fas fa-plus-circle"></i> Add New Project</p>
+      </div>
+      <form class="form-new-project hide">
+        <label for="new-project">Project name:</label>
+        <input
+          type="text"
+          id="new-project"
+          class="project-text-input"
+          maxlength="15"
+          required
+        />
+        <input type="submit" value="Confirm" class="submit-project" />
+        <input type="button" value="Cancel" class="cancel-new-project" />
+      </form>
+    </div>
+  </section>
+    <!-- end of menu -->
+
+      <!-- main section -->
+      <main>
+       <div class="btn-new-todo hide">
+         <p><i class="fas fa-plus-circle"></i> Add New Task</p>
+       </div>
+       <div class="project-title">
+         <i class="far fa-hand-point-left"></i> choose project
+       </div>
+       <form class="form-new-todo hide">
+         <label for="todo-title">Title:</label>
+         <input
+           type="text"
+           id="todo-title"
+           maxlength="20"
+           size="16"
+           required
+         />
+         <label for="due-date">Due date:</label>
+         <input type="date" id="due-date" required />
+         <label for="description">Description:</label>
+         <textarea
+           id="description"
+           rows="3"
+           cols="20"
+           maxlength="50"
+         ></textarea>
+         <label for="priority">Priority:</label>
+         <select id="priority">
+           <option value="low">Low</option>
+           <option value="medium">Medium</option>
+           <option value="high">High</option>
+         </select>
+         <input type="submit" value="Confirm" class="submit-todo" />
+         <input type="button" value="Cancel" class="cancel-new-todo" />
+       </form>
+       <div class="todos-div"></div>
+     </main>
+     <!-- end of main -->
+
+</div>
+ <script src="main.js"></script>
+</body>
+</html>
+>>>>>>> todo
