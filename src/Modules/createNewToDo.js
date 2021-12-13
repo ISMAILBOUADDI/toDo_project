@@ -1,49 +1,4 @@
 import { projectsArray } from './storage';
-
-
-//, dueDate, priority
-
-
-class Todo {
-  constructor(title,description,dueDate,priority){
-    this.title = title;
-    this.description = description;
-    this.dueDate = dueDate;
-    this.priority = priority;
-  }
-
-  setTitel(mytitle){
-    this.title = mytitle ;
-  }
-  
-  setDescription(mydescription){
-    this.description = mydescription;
-  }
-
-  setdueDate(mydueDate){
-    this.dueDate = mydueDate;
-  }
-
-  setPriority(myPriority){
-    this.priority = myPriority;
-  }
-
-  getTitel(mytitle){
-    return mytitle;
-  }
-
-  getDescription(mydescription){
-    return mydescription;
-  }
-
-  getdueDate(mydueDate){
-    return mydueDate;
-  }
-
-  getPriority(myPriority){
-    return myPriority;
-  }
-}
 import {
  todoTitle,
  dueDate,
@@ -51,3 +6,64 @@ import {
  description,
  activeProject,
 } from './dom';
+
+
+//, dueDate, priority
+
+
+class Todo {
+ constructor(title, dueDate, priority, description) {
+   this.title = title;
+   this.dueDate = dueDate;
+   this.priority = priority;
+   this.description = description;
+ }
+
+ setTitle(newTitle) {
+   this.title = newTitle;
+ }
+
+ setDueDate(newDueDate) {
+   this.dueDate = newDueDate;
+ }
+
+ setPriority(newPriority) {
+   this.priority = newPriority;
+ }
+
+ setDescription(newDescription) {
+   this.description = newDescription;
+ }
+
+ getTitle() {
+   return this.title;
+ }
+
+ getDueDate() {
+   return this.dueDate;
+ }
+
+ getPriority() {
+   return this.priority;
+ }
+
+ getDescription() {
+   return this.description;
+ }
+}
+
+const addNewTodo = () => {
+ const newTodo = new Todo(
+   todoTitle.value,
+   dueDate.value,
+   priority.value,
+   description.value
+ );
+ projectsArray.forEach((project) => {
+   if (project.name === activeProject) {
+     project.addTodo(newTodo);
+   }
+ });
+};
+
+export { Todo, addNewTodo };
