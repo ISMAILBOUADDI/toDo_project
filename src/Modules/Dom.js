@@ -35,4 +35,3 @@ const clearInputs = () => {
  });
 };
 
-console.log("work!!!!")
