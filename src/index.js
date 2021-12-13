@@ -1,1 +1,3 @@
-console.log("work");
+import { displayProject } from './Modules/dom';
+
+displayProject();

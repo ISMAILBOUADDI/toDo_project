@@ -9,8 +9,6 @@ import {
 
 
 //, dueDate, priority
-
-
 class Todo {
  constructor(title, dueDate, priority, description) {
    this.title = title;
