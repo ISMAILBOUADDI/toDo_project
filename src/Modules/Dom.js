@@ -34,6 +34,19 @@ const renderTodoList = () => {
   });
 };
 
+const editTodosData = () => {
+  projectsArray.forEach((project) => {
+    if (project.getName() === activeProject) {
+      const selectedTodosObject = project.getTodos()[parseInt(activeTodos)];
+      selectedTodosObject.setTitle(editTodoTitle.value);
+      selectedTodosObject.setDueDate(editDueDate.value);
+      selectedTodosObject.setPriority(editPriority.value);
+      selectedTodosObject.setDescription(editDescription.value);
+    }
+  });
+  modalDiv.classList.toggle('hide');
+};
+
 
 
 
