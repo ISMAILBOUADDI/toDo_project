@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 :root {
-  --primary: #40e0d0;
-  --secondary: #3bd6c6;
-  --tertiary: #b3ecec;
-  --font: #001a1a;
+  --primary: #5840e0;
+  --secondary: #979797;
+  --tertiary: #ffffff;
+  --font: #ffffff;
   font-size: 12px;
 }
 
@@ -126,10 +126,12 @@ section {
 }
 
 .added-project:hover {
-  background-color: var(--tertiary);
+  background-color: rgb(119, 151, 177);
   cursor: pointer;
 }
-
+.btn-new-todo > p{
+  color: black;
+}
 .added-project-wrapper {
   height: 3rem;
   width: 80%;

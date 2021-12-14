@@ -26,7 +26,6 @@ const modalDiv = document.querySelector('.modal-edit-todo');
 
 // placeholder for current active/selected project or todos
 let activeProject = '';
-let activeTodos = '';
 // element utilities
 const clearInputs = () => {
   formInputs.forEach((form) => {
@@ -106,8 +105,8 @@ const renderTodoList = () => {
                             <div class="todo-functions"><i class="fas fa-edit btn-edit-todo"></i>
                             <i class="fas fa-trash btn-del-todo"></i></div>`;
         todosDiv.append(todoDiv);
-        updateProjectIndex();
         updateTodoIndex();
+        
       });
     }
   });
@@ -128,7 +127,6 @@ formNewProject.addEventListener('submit', (e) => {
   e.preventDefault();
   addNewProject();
   saveToLocalStorage();
-  console.log(saveToLocalStorage());
   clearDisplay(projectsDiv);
   displayProject();
   hideMenuButton(btnAddNewProject, formNewProject);
