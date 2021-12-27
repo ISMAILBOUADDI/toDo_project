@@ -1,0 +1,31 @@
+#header {
+
+    .main-form {
+        background: #ffffffe8;
+        padding: 35px 35px;
+        .litle_card {
+            float: left;
+            margin-top: -82px;
+            background: #fff;
+            padding: 10px 28px;
+            margin-left: -35px;
+            color: #0a4668;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .form-control {
+            border: #c2c4c4 solid 1px;
+            padding: 7px 15px;
+            border-radius: inherit;
+            margin-bottom: 10px;
+            color: #cfcece;
+          }
+
+    }
+}
+
+@media (max-width: 600px) {
+    #header{
+        height: 90vh;
+    }
+}

@@ -72,6 +72,7 @@
         <form class="form-new-todo hide">
           <label for="todo-title">Title:</label>
           <input
+          name="Ttask"
             type="text"
             id="todo-title"
             maxlength="20"
@@ -79,16 +80,17 @@
             required
           />
           <label for="due-date">Due date:</label>
-          <input type="date" id="due-date" required />
+          <input name="date" type="date" id="due-date" required />
           <label for="description">Description:</label>
           <textarea
+          name="description"
             id="description"
             rows="3"
             cols="20"
             maxlength="50"
           ></textarea>
           <label for="priority">Priority:</label>
-          <select id="priority">
+          <select id="priority" name="priority">
             <option value="low">Low</option>
             <option value="medium">Medium</option>
             <option value="high">High</option>
