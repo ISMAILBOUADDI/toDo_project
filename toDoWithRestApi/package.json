@@ -1,0 +1,22 @@
+{
+  "name": "todo-list_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HAMZA1619/TODO-LIST_node.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HAMZA1619/TODO-LIST_node.js/issues"
+  },
+  "homepage": "https://github.com/HAMZA1619/TODO-LIST_node.js#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
