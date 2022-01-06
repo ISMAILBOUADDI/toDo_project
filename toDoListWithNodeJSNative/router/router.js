@@ -29,7 +29,7 @@ module.exports = routes = {
                 return;
             }
             let obj;
-            obj = { fields: fields, files: files }
+            obj = { fields: fields }
   
              var dataObj = Object.assign({},obj.fields);
                 // insert into Task

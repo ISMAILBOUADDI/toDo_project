@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HAMZA1619/TODO-LIST_node.js.git"
+    "url": "git+https://github.com/ISMAILBOUADDI/TODO-LIST_node.js.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HAMZA1619/TODO-LIST_node.js/issues"
+    "url": "https://github.com/ISMAILBOUADDI/TODO-LIST_node.js/issues"
   },
-  "homepage": "https://github.com/HAMZA1619/TODO-LIST_node.js#readme",
+  "homepage": "https://github.com/ISMAILBOUADDI/TODO-LIST_node.js#readme",
   "dependencies": {
     "mysql": "^2.18.1"
   }

@@ -1,9 +1,9 @@
 const mysql = require('mysql');
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'ismail',
-    database: 'list'
+    host: "localhost",
+    user: "root",
+    password: "ismail",
+    database: "list"
 });
 class Controller {
     async getAll(table) {
@@ -34,9 +34,7 @@ class Controller {
         return new Promise((resolve, reject) => {
             let query  
             if (table == 'task') {
-                query  = `INSERT INTO task (id_project, titre, status , description, date_db, date_fn) VALUES ('${data.id_project}','${data.titre}','${data.status}','${data.description}','${data.date_db}','${data.date_fn}')`
-            }else if (table == 'project') {
-                query  = `INSERT INTO project (titre, priorite, description, date_db, date_fn) VALUES ('${data.titre}','${data.priorite}','${data.description}','${data.date_db}','${data.date_fn}')`
+                query  = `INSERT INTO task ( titre, status , description) VALUES ('${data.titre}','${data.status}','${data.description}')`
             }
             connection.query(query, function (err, result, fields) {
              if (err) {
@@ -53,8 +51,6 @@ class Controller {
             let query 
             if (table == 'task') {
                 query = `UPDATE task SET titre='${data.titre}', status='${data.status }', description='${data.description}',date_db='${data.date_db}',date_fn='${data.date_fn}' WHERE id = ${id} `
-            }else if (table == 'project') {
-                query = `UPDATE project SET titre='${data.titre}', priorite='${data.priorite }', description='${data.description}',date_db='${data.date_db}',date_fn='${data.date_fn}' WHERE id = ${id} `
             }
             connection.query(query , function (err, result, fields) {
              if (err) {
